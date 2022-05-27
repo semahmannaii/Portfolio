@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semah Mannaii</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel="stylesheet" />
+</head>
+
+<body>
+
+    <a href="#home" class="scroll-top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+
+    <header>
+        <div class="nav container">
+            <a href="#home" class="logo">Semah Mannaii</a>
+            <ul class="navbar">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="menu">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home container" id="home">
+        <div class="home-content">
+            <div class="home-img">
+                <img src="images/profile.png" alt="Profile" />
+            </div>
+            <div class="home-text">
+                <h2>Full Stack Web Developer</h2>
+                <p>I have a serious passion for designing and developing website applications. Using a variety of
+                    popular JavaScript libraries and web technologies such as React.js, Next.js, Node.js, etc..I'm
+                    organised, motivated and have the interpersonal and business skills required to enter the
+                    professional environment.</p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/semahmannaii" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/semahmannaii" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="semah-mannaii-cv.pdf" target="_blank"><i class='bx bxs-file-blank'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services container" id="services">
+        <div class="services-content">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h2>Web Development</h2>
+                <p>I make web applications using HTML, CSS, Javascript, SASS, Bootstrap, TailwindCSS, React.js, Redux,
+                    Next.js, Node.js, Express.js, MongoDB, Firebase, etc..</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-wordpress'></i>
+                <h2>WordPress</h2>
+                <p>I use WordPress to make Blogs, E-Commerce Websites, etc.. With Different Themes & Plugins.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio container" id="portfolio">
+        <div class="portfolio-content">
+            <div class="portfolio-box">
+                <img src="images/footun.png" alt="FooTUN" class="portfolio-img" />
+                <div class="portfolio-overlay">
+                    <h2>FooTUN</h2>
+                    <a href="https://footun.netlify.app/" target="_blank"><i class='bx bx-link'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/tbd.png" alt="ShareAnime" class="portfolio-img" />
+                <div class="portfolio-overlay">
+                    <h2>ShareAnime</h2>
+                    <a href="#" target="_blank"><i class='bx bx-link'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/tbd.png" alt="MarkeTUN" class="portfolio-img" />
+                <div class="portfolio-overlay">
+                    <h2>MarkeTUN</h2>
+                    <a href="#" target="_blank"><i class='bx bx-link'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/tbd.png" alt="AuthApp" class="portfolio-img" />
+                <div class="portfolio-overlay">
+                    <h2>AuthApp</h2>
+                    <a href="#" target="_blank"><i class='bx bx-link'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact container" id="contact">
+        <form class="contact-form" id="contact-form">
+            <input type="text" name="name" class="name" placeholder="Full Name.." required />
+            <input type="email" name="email" class="email" placeholder="Email Adress.." required />
+            <textarea name="message" class="message" cols="30" rows="10" placeholder="Message.." required></textarea>
+            <input type="submit" value="Send" class="btn" />
+        </form>
+    </section>
+
+    <footer class="footer container">
+        <p>&copy; Semah Mannaii</p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("UpSUoUaLkLcNIoAlE");
+        })();
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
