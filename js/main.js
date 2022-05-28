@@ -1,15 +1,14 @@
-let menu = document.querySelector(".menu")
-let navbar = document.querySelector(".navbar")
+let header = document.querySelector("header")
 
-menu.onClick = () => {
-    navbar.classList.toggle("open-menu")
-    menu.classList.toggle("toggle")
-}
+window.addEventListener("scroll", () => {
+    header.classList.toggle("header-scroll", window.scrollY > 0)
+})
 
-window.onscroll = () => {
-    navbar.classList.remove("open-menu")
-    menu.classList.remove("toggle")
-}
+let scrollTop = document.querySelector(".scroll-top")
+
+window.addEventListener("scroll", () => {
+    scrollTop.classList.toggle("scroll-active", window.scrollY >= 400)
+})
 
 // Email JS
 function validate(){
@@ -61,17 +60,3 @@ function success(){
         window.location.reload();
     }, 2000)
 }
-
-// Header
-let header = document.querySelector("header")
-
-window.addEventListener("scroll", () => {
-    header.classList.toggle("header-scroll", window.scrollY > 0)
-})
-
-
-let scrollTop = document.querySelector(".scroll-top")
-
-window.addEventListener("scroll", () => {
-    scrollTop.classList.toggle("scroll-active", window.scrollY >= 400)
-})

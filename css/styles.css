@@ -74,7 +74,7 @@ header {
 .nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px 0;
 }
 
@@ -88,55 +88,6 @@ header {
     font-size: 20px;
     font-weight: 600;
     color: #647bff;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    column-gap: 24px;
-}
-
-.nav-link {
-    font-size: 16px;
-    padding: 4px 8px;
-    border-radius: 4px;
-    color: #fff;
-}
-
-.nav-link:hover{
-    color: #647bff;
-    transition: 0.3s all linear;
-}
-
-.menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 5px;
-    cursor: pointer;
-    z-index: 200;
-    transition: 0.3s;
-}
-
-.menu div {
-    display: block;
-    background-color: #fff;
-    height: 2px;
-    width: 24px;
-    transition: 0.3s;
-}
-
-.toggle .one {
-    transform: rotate(-45deg) translate(-5px, 5px);
-}
-
-.toggle .two {
-    opacity: 0;
-}
-
-.toggle .three {
-    transform: rotate(45deg) translate(-5px, -5px);
 }
 
 .home {
@@ -188,7 +139,8 @@ header {
 .social {
     display: flex;
     align-items: center;
-    column-gap: 10px;
+    margin-top: 22px;
+    column-gap: 15px;
 }
 
 .social .bx {
@@ -382,34 +334,6 @@ header {
     .portfolio-box {
         height: 245px;
     }
-
-    .menu {
-        display: flex;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 0;
-        right: -100%;
-        width: 300px;
-        height: 100vh;
-        background: #0d0f26;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 50px 20px;
-        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-
-    .open-menu {
-        right: 0;
-        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-
-    .nav-link {
-        display: block;
-        margin: 16px 0;
-    }
 }
 
 @media (max-width: 450px){
@@ -431,10 +355,6 @@ header {
         display: contents;
     }
 
-    .social {
-        margin-top: 18px;
-    }
-
     .services-content,
     .portfolio-content {
         grid-template-columns: 1fr;
@@ -442,10 +362,6 @@ header {
 }
 
 @media (max-width: 325px){
-    .navbar {
-        width: 100%;
-    }
-
     .portfolio-box {
         height: 190px;
     }
