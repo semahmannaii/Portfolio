@@ -125,7 +125,7 @@ header {
     text-align: center;
 }
 
-.home-text h2{
+.home-text h2 {
     font-size: 32px;
     line-height: 50px;
     margin-bottom: 24px;
@@ -151,18 +151,18 @@ header {
     background-color: #171b3c;
 }
 
-.services {
+.skills {
     margin-top: 80px;
     margin-bottom: 80px;
 }
 
-.services-content {
+.skills-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 32px;
 }
 
-.services-box {
+.skills-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,19 +170,20 @@ header {
     padding: 15px;
 }
 
-.services-box .bx {
+.skills-box .bx {
     font-size: 32px;
     padding: 10px;
 }
 
-.services-box h2 {
+.skills-box .iconify {
+    font-size: 50px;
+    padding: 10px;
+}
+
+.skills-box h2 {
     font-size: 18px;
     font-weight: 500;
     margin: 8px 0;
-}
-
-.services-box p {
-    font-size: 15px;
 }
 
 .portfolio {
@@ -192,7 +193,7 @@ header {
 
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 }
 
@@ -256,7 +257,8 @@ header {
     row-gap: 16px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     border: none;
     outline: none;
     font-size: 16px;
@@ -291,14 +293,14 @@ header {
     font-size: 16px;
 }
 
-@media (max-width: 990px){
+@media (max-width: 990px) {
     .container {
         margin: 0 auto;
         width: 90%;
     }
 }
 
-@media (max-width: 892px){
+@media (max-width: 892px) {
     section {
         padding: 32px 0;
     }
@@ -307,12 +309,16 @@ header {
         padding: 12px 0;
     }
 
+    .skills-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .portfolio-box {
         height: 257px;
     }
 }
 
-@media (max-width: 775px){
+@media (max-width: 775px) {
     .logo {
         font-size: 18px;
     }
@@ -336,11 +342,24 @@ header {
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 600px) {
+    .skills-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .portfolio-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
     .home {
         min-height: 485px;
         padding-top: 80px;
     }
+
     .home-img {
         width: 220px;
         height: 300px;
@@ -355,13 +374,16 @@ header {
         display: contents;
     }
 
-    .services-content,
+    .skills-content {
+        grid-template-columns: 1fr;
+    }
+
     .portfolio-content {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 325px){
+@media (max-width: 325px) {
     .portfolio-box {
         height: 190px;
     }
